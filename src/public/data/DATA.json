@@ -1,0 +1,278 @@
+{
+  "restaurants": [
+    {
+      "id": "6c7bqjgi84kcowlqdz",  
+      "name": "Bring Your Phone Cafe",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
+      "city": "Medan",
+      "rating": 4.6,
+      "address": "Jln. Pandeglang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Ahmad",
+          "review": "Tidak rekomendasi untuk pelajar!",
+          "date": "13 November 2019"
+        }
+      ]
+    },
+    {
+      "id": "ljx8i0qu2uckcowlqdz",
+      "name": "Run The Gun",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/07",
+      "city": "Bali",
+      "rating": 4.6,
+      "address": "Jln. Bali no 123",
+      "menus": {
+        "foods": [
+          {
+            "name": "Nasi goreng"
+          },
+          {
+            "name": "Mie Goreng"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es Dawet"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Nanta",
+          "review": "Tidak rekomendasi untuk pemuda!",
+          "date": "20 November 2020"
+        }
+      ]
+    },
+    {
+      "id": "fe8bbxoazddkcowlqdz",
+      "name": "Pangsit Express",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/38",
+      "city": "Malang",
+      "rating": 4.7,
+      "address": "Jln. Malang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Nadia",
+          "review": "Rekomendasi banget untuk pelajar!",
+          "date": "02 November 2018"
+        }
+      ]
+    },
+    {
+      "id": "9jpuzkm6n6jkcowlqdz",
+      "name": "Kafein",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/40",
+      "city": "Bali",
+      "rating": 3.8,
+      "address": "Jln. bali no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Ahmad",
+          "review": "Tidak rekomendasi orang tua!",
+          "date": "30 januari 2019"
+        }
+      ]
+    },
+    {
+      "id": "cpl5jpsnuqkkcowlqdz",
+      "name": "Makan mudah",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/08",
+      "city": "Malang",
+      "rating": 4.6,
+      "address": "Jln. Pandeglang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Ahmad",
+          "review": "Tidak rekomendasi untuk pelajar!",
+          "date": "13 November 2019"
+        }
+      ]
+    },
+    {
+      "id": "iqtf9hmdzvbkcowlqdz",
+      "name": "Saya Suka",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/32",
+      "city": "Surabaya",
+      "rating": 3.6,
+      "address": "Jln. Pandeglang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Ahmad",
+          "review": "Tidak rekomendasi untuk pelajar!",
+          "date": "13 November 2019"
+        }
+      ]
+    },
+    {
+      "id": "8i06gqcc2dpkcowlqdz",
+      "name": "Gigitan Cepat",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/45",
+      "city": "Aceh",
+      "rating": 4,
+      "address": "Jln. Pandeglang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Ahmad",
+          "review": "Tidak rekomendasi untuk pelajar!",
+          "date": "13 November 2019"
+        }
+      ]
+    },
+    {
+      "id": "wf5o19xhxxkcowlqdz",
+      "name": "Fairy Cafe",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings.",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/04",
+      "city": "Malang",
+      "rating": 3.9,
+      "address": "Jln. Pandeglang no 19",
+      "menus": {
+        "foods": [
+          {
+            "name": "Paket rosemary"
+          },
+          {
+            "name": "Toastie salmon"
+          }
+        ],
+        "drinks": [
+          {
+            "name": "Es krim"
+          },
+          {
+            "name": "Sirup"
+          }
+        ]
+      },
+      "customerReviews": [
+        {
+          "name": "Dani",
+          "review": "Rekomendasi banget untuk pelajar!",
+          "date": "11 september 2019"
+        }
+      ]
+    }
+  ]
+}
+
+

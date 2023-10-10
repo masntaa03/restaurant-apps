@@ -1,0 +1,415 @@
+img {
+  display: block;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #000000;
+  z-index: 1;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 10vh;
+  height: 10vh;
+  background-image: url('../public/images/heros/logo.jpg');
+  background-size: cover;
+  margin-left: 10vh;
+  margin-right: 15px;
+}
+
+.brand-text {
+  font-weight: bold;
+  font-family: cursive;
+  margin-right: 10vh;
+  font-size: 1rem;
+}
+
+.brand-text::after {
+  color: rgb(84, 187, 36);
+  content: "Food";
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ada7a7;
+  font-family: cursive;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a:hover {
+  color: #2f00ff;
+}
+
+.main-content {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 100%;
+  background-image: url('../public/images/heros/hero-image_3.jpg');
+  background-size: contain;
+  height: 750px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.drawer-opened .main-content {
+  max-height: 100%;
+}
+
+.main-content h1 {
+  font-size: 47px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-content p {
+  font-size: 15px;
+  font-family: cursive;
+  display: block;
+}
+
+.main-content .btn {
+  display: inline-block;
+  padding: 5px;
+  background-color: #2600ff;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.main-content .btn:hover {
+  background-color: rgb(22, 108, 201);
+  cursor: pointer;
+}
+
+.main-content.open {
+  margin-left: 250px;
+}
+
+  .explore {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .restaurant-box {
+    display: inline-block;
+    width: 250px;
+    margin: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .restaurant-box img {
+    width: 100%;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all .3s ease;  
+  }
+  
+  .restaurant-box img:hover {
+    transform: scale(1.1);
+  }
+
+  .restaurant-box .rating {
+    font-size: 15px;
+    color: #ffcc00;
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .restaurant-box h1 {
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .restaurant-box p {
+    font-weight: normal;
+    margin: 5px 0;
+    font-size: 15px;
+  }
+
+  .restaurant-box .city {
+    top: 10px;
+    left: 10px;
+    background-color: #2600ff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(28, 28, 28, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 140px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative; /* Tambahkan properti ini untuk membuat konten menjadi referensi bagi tombol close */
+}
+
+.close-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  aspect-ratio: square;
+  background-color: #d81d1d;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  transition: all .3s ease;
+}
+
+.restaurant-name {
+  font-weight: bold;
+    margin: 5px 0;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.restaurant-details {
+  flex: 1;
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-rating {
+  font-size: 16px;
+  color: #ffcc00;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.restaurant-city {
+  margin-top: 10px;
+  background-color: #2600ff;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: #2600ff;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3217cc;
+}
+
+.restaurant-description {
+  font-weight: normal;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* Gaya untuk gambar dalam modal */
+.modal-image {
+  max-width: 90%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: initial;
+}
+
+
+.right-content {
+  flex-wrap: wrap;
+  display: flow-root;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer {
+  background-color: #615e5e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#drawer {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transform: translate(-250px, 0);
+  transition: left 0.3s ease-in-out;
+  background-color: #111;
+  z-index: 2;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+#drawer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#drawer li {
+  margin: 10px 0;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#drawer a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#drawer a:hover {
+  background-color: #555;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+#hamburger {
+  display: none;
+  position: fixed;
+  left: 20px;
+  font-size: 29px;
+  color: #333;
+  font-weight: bold;
+  
+}
+
+@media screen and (max-width: 900px) {
+  #drawer {
+    left: 0;
+  }
+
+  #drawer.open {
+    left: 0;
+  }
+
+  #hamburger {
+    display: flex;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    background-image: url('../public/images/heros/logo.jpg');
+    background-size: cover;
+    margin-left: 10vh;
+    margin-right: 15px;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
