@@ -10,7 +10,6 @@ body {
 }
 
 header {
-  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -123,7 +122,7 @@ header nav {
   text-align: center;
   line-height: 44px;
   min-width: 44px;
-  min-height: 44px;
+  min-height: 44px; 
 }
 
 .main-content .btn:hover {
@@ -195,74 +194,48 @@ header nav {
     width: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-
-.modal {
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 999;
-  background-color: rgba(28, 28, 28, 0.5);
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.modal-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 80%;
-  max-height: 80%;
-  margin: 140px auto;
-  background-color: #fff;
+  
+.restaurant-detail {
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: relative; /* Tambahkan properti ini untuk membuat konten menjadi referensi bagi tombol close */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.close-button {
-  width: 2.5rem;
-  height: 2.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  color: #ffffff;
-  cursor: pointer;
-  aspect-ratio: square;
-  background-color: #d81d1d;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  transition: all .3s ease;
-}
-
-.restaurant-name {
-  font-weight: bold;
-    margin: 5px 0;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.restaurant-details {
-  flex: 1;
-  padding: 10px; 
+.like {
+  width: 55px;
+  height: 55px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #2100fe;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
 
-.restaurant-rating {
-  font-size: 16px;
-  color: #ffcc00;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+#restaurant-name {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
 }
 
-.restaurant-city {
+#restaurant-image {
+  max-width: 30%;
+  height: auto;
   margin-top: 10px;
+}
+
+#restaurant-city {
+  top: 10px;
+  left: 10px;
   background-color: #2600ff;
   color: #fff;
   padding: 5px;
@@ -271,44 +244,50 @@ header nav {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.button {
+#restaurant-description {
+  font-size: 16px;
+  color: #333;
   margin-top: 10px;
-  background-color: #2600ff;
-  color: #fff;
-  padding: 4px;
-  border-radius: 5px;
-  font-size: 15px;
-  width: 100px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #3217cc;
+.section-heading {
+  display: table-caption;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+  
 }
 
-.restaurant-description {
-  font-weight: normal;
-    margin: 5px 0;
-    font-size: 15px;
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-/* Gaya untuk gambar dalam modal */
-.modal-image {
-  max-width: 90%;
-  max-height: 100%;
-  margin: 0 auto;
-  display: initial;
+li {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
 }
 
-
-.right-content {
-  flex-wrap: wrap;
-  display: flow-root;
-  align-items: center;
-  gap: 0.5rem;
+.customer-name {
+  font-weight: bold;
+  color: #333;
 }
+
+.customer-review {
+  color: #000000;
+}
+
+.review-date {
+  color: #000000;
+}
+
+.heart-icon {
+  font-size: 24px; 
+  margin-right: 8px; 
+  vertical-align: middle; 
+}
+
 
 footer {
   background-color: #615e5e;
@@ -316,6 +295,43 @@ footer {
   text-align: center;
   padding: 20px 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#favorite-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#favorite-list li {
+  width: 45%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#favorite-list img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#favorite-list h3 {
+  margin: 1rem 0;
+  font-size: 18px;
+}
+
+/* Media query untuk tampilan seluler */
+@media (max-width: 768px) {
+  #favorite-list li {
+    width: 100%;
+  }
 }
 
 #drawer {

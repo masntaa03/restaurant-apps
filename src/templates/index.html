@@ -6,6 +6,23 @@
     <title>Aplikasi Katalog Restoran - ecofood</title>
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
     <link rel="icon" href="images/heros/diet.png" type="image/x-icon">
+        <!-- Icon -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+  
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Signika&display=swap"
+        rel="stylesheet"
+      />
 </head>
 <body>
     <a href="#list-content" class="skip-link">Skip To Content</a>
@@ -13,17 +30,24 @@
         <nav>
             <div class="brand">
                 <div class="logo"></div>
-                <div class="brand-text">Aplikasi Eco</div>
+                <div class="brand-text">ecofood</div>
             </div>
             <button id="hamburger" class="menu-toggle">☰</button>
             <ul class="navbar">
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Favorite</a></li>
+                <li><a href="favorite.html">Favorite</a></li>
                 <li><a href="https://github.com/masntaa03">About Us</a></li>
                 <li><a href="detail.html">Details</a></li>
             </ul>
         </nav>
     </header>
+        <nav id="drawer" class="closed">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="https://github.com/masntaa03">About Us</a></li>
+        </ul>
+    </nav>
     <main>
         <div class="main-content">
             <h1>Selamat Datang di Aplikasi Katalog Restoran Kami</h1>
@@ -36,35 +60,12 @@
             </div>
         </section>
     </main>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <div class="restaurant-details">
-                <div class="left-content">
-                    <img id="modal-image" class="modal-image" alt="Gambar Restoran">
-                </div>
-                <div class="right-content">
-                    <button class="close-button">×</button>
-                    <h2 class="restaurant-name" id="modal-name">Nama Restoran</h2>
-                        <p class="restaurant-rating">Rating: <span id="modal-rating">4.5</span></p>
-                        <p class="restaurant-city"><span id="modal-city">Nama Kota</span></p>
-                        <p class="restaurant-description"><span id="modal-description">Nama Kota</span></p>
-                    </div>
-            </div>
-        </div>
-    </div>
-   
-    
     <footer>
         <p>Copyright © 2020 - Hunger Apps</p>
     </footer>
-    <nav id="drawer" class="closed">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Favorite</a></li>
-            <li><a href="https://github.com/masntaa03">About Us</a></li>
-        </ul>
-    </nav>
     <script src="../scripts/index.js"></script>
     <script src="../scripts/detail.js"></script>
+    <script src="../scripts/favorite.js"></script>
+
 </body>
 </html>

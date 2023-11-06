@@ -1,0 +1,1 @@
+const dbPromise=idb.open("restaurant-db",1,(t=>{t.objectStoreNames.contains("restaurants")||t.createObjectStore("restaurants",{keyPath:"id"})}));

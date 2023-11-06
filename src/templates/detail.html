@@ -1,11 +1,28 @@
-{% comment %} <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplikasi Katalog Restoran</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
     <link rel="icon" href="images/heros/diet.png" type="image/x-icon">
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <a href="#list-content" class="skip-link">Skip To Content</a>
@@ -18,31 +35,29 @@
             <button id="hamburger" class="menu-toggle">☰</button>
             <ul class="navbar">
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Favorite</a></li>
+                <li><a href="favorite.html">Favorite</a></li>
                 <li><a href="https://github.com/masntaa03">About Us</a></li>
                 <li><a href="detail.html">Details</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="restaurant-detail">
-            <div class="modal" id="modal">
-                <div class="modal-content">
-                    <span class="close-button">×</span>
-                    <img src="" alt="" id="modal-image">
-                    <h2 id="modal-name"></h2>
-                    <div id="modal-rating" class="modal-rating"></div>
-                    <div id="modal-city" class="modal-city"></div>
-                    <p id="modal-description"></p>
-                    <h3>Food Menu</h3>
-                    <ul id="food-menu"></ul>
-                    <h3>Drink Menu</h3>
-                    <ul id="drink-menu"></ul>
-                    <h3>Customer Reviews</h3>
-                    <ul id="customer-reviews"></ul>
+        <div class="restaurant-detail">
+            <div class="restaurant-info">
+                <h2 id="restaurant-name"></h2>
+                <p id="restaurant-city"></p>
+                <p id="restaurant-description"></p>
+                <div class="image-container">
+                    <img id="restaurant-image" src="" alt="Gambar Restoran">
                 </div>
+                <ul id="food-menu"></ul>
+                <ul id="drink-menu"></ul>
+                <ul id="reviews"></ul>
+                <button aria-label="like this resto" id="likeButton" class="like">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </button>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <p>Copyright © 2020 - Hunger Apps</p>
@@ -54,7 +69,8 @@
             <li><a href="https://github.com/masntaa03">About Us</a></li>
         </ul>
     </nav>
-    <script src="../scripts/index.js"></script>
-    <script src="../scripts/detail.js"></script>
+    <script src="/src/scripts/detail.js"></script>
+    <script src="/src/scripts/favorite.js"></script>
+    <script src="/src/scripts/index.js"></script>
 </body>
-</html> {% endcomment %}
+</html>

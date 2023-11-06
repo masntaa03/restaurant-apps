@@ -1,7 +1,7 @@
 {
   "restaurants": [
     {
-      "id": "6c7bqjgi84kcowlqdz",  
+      "id": "6c7bqjgi84kcowlqdz",   
       "name": "Bring Your Phone Cafe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       "pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
